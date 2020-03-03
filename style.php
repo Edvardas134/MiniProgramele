@@ -42,13 +42,13 @@ div {
   padding: 20px;
 }
 
-
+/* Choosing family font, border type and width of the table*/
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
-
+/* Putting a borded on table attributes */
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
