@@ -82,6 +82,7 @@
                 echo "</table>";
             }
             ?>
+        </div>
             <br>
             <br>
         <div>
