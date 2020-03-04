@@ -23,7 +23,7 @@
                     $ext = pathinfo($fname, PATHINFO_EXTENSION);                                // geting extension of the file 
                         if($ext == 'csv'){                                                      // checking if it is a CSV file
                             $csv = [];                                                          // creating associative array
-                                if (($handle = fopen($fname, "r")) !== false) {                 // open for reading
+                                if (($handle = fopen('Files/'.$fname, "r")) !== false) {                 // open for reading
                                     if (($data = fgetcsv($handle, 1000, ",")) !== false) {      // extract header data
                                         $keys = $data;                                          // save as keys
                                     }
@@ -61,7 +61,7 @@
             <br>
             <?php 
             if ($ext == "xml"){                                                                 // checking if the input file is XML
-                $ob = simplexml_load_file($fname);                                              // assigning value to  $ob and loading the file
+                $ob = simplexml_load_file('Files/'.$fname);                                              // assigning value to  $ob and loading the file
                 $json = json_encode($ob);                                                       // encoding the file to json
                 $array = json_decode($json, true);                                              // decoding the file to an array 
             }        
@@ -91,7 +91,7 @@
             <br>
             <?php
             if ($ext == 'json'){                                                                // checking if the input file is XML
-                $jsonobj = file_get_contents($fname);                                           // assigning value to  $ob and loading the file
+                $jsonobj = file_get_contents('Files/'.$fname);                                           // assigning value to  $ob and loading the file
                 $jsonobj = json_decode($jsonobj, true);                                         // decoding the file to an array
                     echo "<pre>";
                     echo '<table>'; 
