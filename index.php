@@ -1,4 +1,4 @@
-<?php include 'style.php';?>
+<?php include './Style/style.php';?>
        
 <!DOCTYPE html>
 <html lang="en">
