@@ -20,6 +20,19 @@ input[type=text]{
   display: inline-block;
 
 }
+input[type=file]{
+  width: 256px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 10px 0px 12px 20px;
+  display: inline-block;
+ 
+}
 input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
@@ -30,7 +43,21 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
+button[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  
+}
+button[type=submit]:hover {
+  background-color: #45a049;
+}
 input[type=submit]:hover {
   background-color: #45a049;
 }

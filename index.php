@@ -7,10 +7,17 @@
         <title>Mini App</title>
     </head>
     <body>
-        <div>
-            <form action="/index.php" method = "post">
+        <div id = "form">
+            <form id= "search" action="/index.php" method = "post">
                 <input type="text" id="fname" name="fname" placeholder="Search For A File"><br><br>
                 <input type="submit" value="Submit" >
+            </form>
+         
+            <br>
+            <br>
+            <form id= "upload"action="/upload.php" method = "post" enctype="multipart/form-data">
+                <input type="file" name="file" placeholder="Upload A File"><br><br>
+                <button type="submit" name="upload" > Upload </button>
             </form>
         </div>
             <br>    
